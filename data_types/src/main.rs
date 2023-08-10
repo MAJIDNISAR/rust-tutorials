@@ -30,7 +30,7 @@ fn main() {
     // boolean
     let statement:bool = true; // false 0 , true 1
 
-    let letter : char= '9' //'.' 
+    let letter : char= '9'; //'.' 
 
 
 
