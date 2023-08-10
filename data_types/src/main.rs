@@ -24,8 +24,8 @@ fn main() {
     /// i128 bit integer signed any whole number and doesnt contain fractional or decimal part positive and negative integer
     
     let y: u32=973; //unsigned integers u64 u128
-    let z:f32=10.9 // single precision default 
-    let xx:f64=88.9 // double precision
+    let z:f32=10.9; // single precision default 
+    let xx:f64=88.9; // double precision
 
     // boolean
     let statement:bool = true; // false 0 , true 1
@@ -35,4 +35,14 @@ fn main() {
 
 
     println!("Hello, world!");
+
+    // composite data types / compound data types
+
+    // tuple and array
+    let mut tup= (1,'s',55.4,true);// implicit type
+    let tups:(i32,char,f32,bool)=(2,'r',44.2,false);// explicit  
+    let tupsNew:(i128,char,f32,bool)=(2,'r',44.2,false);// explicit  
+    // tups and tupsNew cant be assigned to each other as their types are different
+
+    println!("Tuple:({},{},{},{})",tup.0,tup.1,tup.2,tup.3 );
 }
