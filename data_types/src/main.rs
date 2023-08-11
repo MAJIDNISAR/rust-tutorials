@@ -1,4 +1,5 @@
 /**
+ * primitive, scaler and compound
 .primitive data types in rust
 primitive data types are the basic data types or fundamental data types used to declare variables
 scalar and compound
@@ -45,4 +46,17 @@ fn main() {
     // tups and tupsNew cant be assigned to each other as their types are different
 
     println!("Tuple:({},{},{},{})",tup.0,tup.1,tup.2,tup.3 );
+
+    ///
+    /// array
+    /// can be mutable implicit and explicit type conversion
+    let mut arr:[i32;5]=[1,2,3,4,5];
+    arr[4]=6;
+    println!("Array: {}",arr[0]);//,arr[1],arr[2],arr[3],arr[4]);
+    println!("Array[4]: {}",arr[4]);//,arr[1],arr[2],arr[3],arr[4]);
+
+    let xx:u8=4;
+    //let yy:i32=x; //this will through an error expected u32 froun i32
+    let yy:u32=4;
+    println!("xx {}, yy {}",xx,yy);
 }
